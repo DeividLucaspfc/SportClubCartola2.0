@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Scouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Sport Club Cartola, Desenvolvimento de Jogos e Campeonatos.">
+    <meta name="keywords" content="cartola, campeonatos, manager, sites">
+    <meta name="robots" content= "index, follow">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="scoutstyle.css">
+    <script src="direciona.js"></script>
+</head>
+<body>
+  <h1>Gabigol</h1>
+    <select name="sct1" class="jogs" id="sct1">
+      <option value="0">-</option>
+      <option value="5">SG</option>
+      <option value="3">DD</option>
+      <option value="7">DP</option>
+      <option value="5">A</option>
+      <option value="3,5">FT</option>
+      <option value="1">FD</option>
+      <option value="8">G</option>
+      <option value="3">MR</option>
+      <option value="2">PS</option>
+      <option value="1">JT</option>
+      <option value="0,5">RE</option>
+      <option value="-6">GC</option>
+      <option value="-2">CA</option>
+      <option value="-5">CV</option>
+      <option value="-2">GS</option>
+      <option value="-3,5">PP</option>
+      <option value="-3">ZR</option>
+      <option value="-2">PC</option>
+    </select>
+    <select name="sct2" class="jogs" id="sct2">
+      <option value="0">-</option>
+      <option value="5">SG</option>
+      <option value="3">DD</option>
+      <option value="7">DP</option>
+      <option value="5">A</option>
+      <option value="3,5">FT</option>
+      <option value="1">FD</option>
+      <option value="8">G</option>
+      <option value="3">MR</option>
+      <option value="2">PS</option>
+      <option value="1">JT</option>
+      <option value="0,5">RE</option>
+      <option value="-6">GC</option>
+      <option value="-2">CA</option>
+      <option value="-5">CV</option>
+      <option value="-2">GS</option>
+      <option value="-3,5">PP</option>
+      <option value="-3">ZR</option>
+      <option value="-2">PC</option>
+    </select>
+    <select name="sct3" class="jogs">
+      <option value="0">-</option>
+      <option value="5">SG</option>
+      <option value="3">DD</option>
+      <option value="7">DP</option>
+      <option value="5">A</option>
+      <option value="3,5">FT</option>
+      <option value="1">FD</option>
+      <option value="8">G</option>
+      <option value="3">MR</option>
+      <option value="2">PS</option>
+      <option value="1">JT</option>
+      <option value="0,5">RE</option>
+      <option value="-6">GC</option>
+      <option value="-2">CA</option>
+      <option value="-5">CV</option>
+      <option value="-2">GS</option>
+      <option value="-3,5">PP</option>
+      <option value="-3">ZR</option>
+      <option value="-2">PC</option>
+    </select>
+    <select name="sct4" class="jogs">
+      <option value="0">-</option>
+      <option value="5">SG</option>
+      <option value="3">DD</option>
+      <option value="7">DP</option>
+      <option value="5">A</option>
+      <option value="3,5">FT</option>
+      <option value="1">FD</option>
+      <option value="8">G</option>
+      <option value="3">MR</option>
+      <option value="2">PS</option>
+      <option value="1">JT</option>
+      <option value="0,5">RE</option>
+      <option value="-6">GC</option>
+      <option value="-2">CA</option>
+      <option value="-5">CV</option>
+      <option value="-2">GS</option>
+      <option value="-3,5">PP</option>
+      <option value="-3">ZR</option>
+      <option value="-2">PC</option>
+    </select>
+    <select name="sct5" class="jogs">
+      <option value="0">-</option>
+      <option value="5">SG</option>
+      <option value="3">DD</option>
+      <option value="7">DP</option>
+      <option value="5">A</option>
+      <option value="3,5">FT</option>
+      <option value="1">FD</option>
+      <option value="8">G</option>
+      <option value="3">MR</option>
+      <option value="2">PS</option>
+      <option value="1">JT</option>
+      <option value="0,5">RE</option>
+      <option value="-6">GC</option>
+      <option value="-2">CA</option>
+      <option value="-5">CV</option>
+      <option value="-2">GS</option>
+      <option value="-3,5">PP</option>
+      <option value="-3">ZR</option>
+      <option value="-2">PC</option>
+    </select>
+    <input type="button" value="calcular" onclick="calcular()">
+    
+
+<script>
+  var txt1 = document.getElementsById('sct1');
+  var txt2 = document.getElementsById('sct2');
+  var sct1 = parseInt(txt1.value);
+  var sct2 = parseInt(txt2.value);
+  var res = document.getElementById('res');
+function calcular(){
+  var soma = sct1 + sct2;
+  window.alert(soma);
+}
+</script>
+
+<div id="res">
+
+  <h2>Aparecer o total de pontos!</h2>
+
+</div>
+</body>

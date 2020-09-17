@@ -1,0 +1,970 @@
+*{
+    margin: 0;  
+    padding: 0; 
+    font-size: 100%; 
+    border: none; 
+    outline: none; 
+    font-weight: 300; 
+    box-sizing: border-box; 
+    font-family: 'Cairo', sans-serif;
+    
+}
+body{
+    background-image: url(img/backgroundmng.jpg);
+    background-position: 60% 10%;
+    color:black;
+}
+a {
+    text-decoration: none;
+    color: orange;
+}
+a.loginhome {
+    text-align: center;
+    position: relative;
+    float: right;
+    
+}
+a.loginhome:hover {
+    color: orange;
+}
+ul {
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+img.rodada {
+    position: relative;
+    left: 15px;
+    max-width: 325px;
+}
+/*Cabeçalho*/
+.cabecalho{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    float: left;
+    background: url(img/logoscc.png) center center/70px no-repeat;
+}
+
+.btn-menu {
+    width: 56px;
+    height: 56px;
+    float: right;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 56px;
+    background: linear-gradient(to right, #099e6e, #02583d);
+}
+h1 {
+    color: white;
+    font-size: 16pt;
+    text-align: center;
+}
+h2 {
+    color: orange;
+    font-size: 12pt;
+    text-align: center;
+    font-style: italic;
+}
+h3 {
+    color: #099d6d;
+    font-size: 12pt;
+    text-align: center;
+}
+p {
+    color: white;
+    font-size: 9pt;
+    text-align: center;
+}
+/*Menu*/
+.menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.btn-close{
+    font-size: 3em;
+    color:#fff;
+    float:right;
+    cursor: pointer;
+    margin-right: 5%;
+}
+.menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.menu li {
+    padding: 1.5%;
+}
+.menu li a {
+    font-size: 2em;
+    color: #fff;
+    padding: 1.5% 3%;
+}
+.menu li a:hover{
+    border: 1px solid #099e6e;
+}
+select{
+    font-size: 10pt;
+}
+.jogs{
+    width: 40px;
+}
+.footer{
+    color: white;
+    text-align: center;
+}
+img.whats {
+    width: 50px;
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+.escalado{
+    color: white;
+}
+form.cadastro {
+    position: relative;
+    left: 95px;
+}
+input[type="text"] {
+    width: 210px;
+    border-radius: 8px;
+}
+input[type="email"]{
+    width: 210px;
+    border-radius: 8px;
+}
+input[type="password"]{
+    width: 210px;
+    border-radius: 8px;
+}
+input[type="file"]{
+    width: 370px;
+    border-radius: 8px;
+    color: #fff;
+}
+h1.img_up{
+    color: white;
+    position: relative;
+    left: -70px;
+    font-size: 12pt;
+}
+.text {
+    color: white;
+} 
+h1.login{
+    color: white;
+    font-size: 8pt;
+    float: left;
+}
+a.logout {
+    color: white;
+    font-style: italic;
+}
+
+
+/*TELA CSS DE TABLET E PC*/
+.campo_escalacao{
+        max-width: 350px;
+        position: relative;
+        left: 5px;
+        top: 0;
+        z-index: -1;
+    }
+    .escalacao_completa {
+        bottom: 80px;
+        position: relative;
+        left: -55px;
+    }
+    .img_banco {
+        position: relative;
+        bottom: 60px;
+        left: -80px;
+    }
+    select.jog1 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 181px;
+        bottom: -45px;
+    }
+    select.jog2 {
+        position: absolute;
+        width:  50px;
+        height: 25px;
+        left: 127px;
+        bottom: 3px;
+    }
+    select.jog3 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 238px;
+        bottom: 3px;
+    }
+    select.jog4 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 180px;
+        bottom: 35px;
+    }
+    select.jog5 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 102px;
+        bottom: 150px
+    }
+    select.jog6 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 180px;
+        bottom: 131px;
+    }
+    select.jog7 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 255px;
+        bottom: 150px
+    }
+    select.jog8 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 104px;
+        bottom: 216px;
+    }
+    select.jog9 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 248px;
+        bottom: 216px;
+    }
+    select.jog10 {
+        z-index: 1;
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 128px;
+        bottom: 298px;
+    }
+    select.jog11 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 232px;
+        bottom: 298px;
+    }
+    img.banco_reserva {
+        width: 60px;
+        position: absolute;
+        left: 365px;
+        bottom: 233px;
+    }
+    img.logo_time {
+        width: 60px;
+        position: absolute;
+        left: 365px;
+        bottom: 360px;
+    }
+    h1.nome_time {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 372px;
+        bottom: 292px;
+        text-align: center;      
+    }
+    h1.nome_tecnico {
+    color: orange;
+    position: absolute;
+    left: 338px;
+    bottom: 305px;
+    text-align: center;
+    font-size: 9pt;
+    width: 100px;
+    }
+    select.res1 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 360px;
+        bottom: 196px;
+    }
+    select.res2 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 360px;
+        bottom: 152px;
+    }
+    select.res3 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 360px;
+        bottom: 108px;
+    }
+    select.res4 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 360px;
+        bottom: 64px;
+    }
+    select.res5 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 360px;
+        bottom: 20px;
+    }
+    input.btn-enviar {
+        position: absolute;
+        left: 360px;
+        bottom: -25px;
+        background-color: #099e6e;
+        width: 50px;
+        height: 28px;
+        color: white;
+    }
+    select.formacao {
+        position: relative;
+        bottom: 28px;
+        left: 20px;
+        text-align: center;
+        background-color: orange;
+        
+    }
+    /*Time escalado*/
+    .escalado_completo {
+        bottom: -545px;
+        position: relative;
+        left: -60px;
+    }
+    .esc1 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 161px;
+        bottom: 12px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+        }
+    .esc2 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 228px;
+        bottom: 45px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc3 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 96px;
+        bottom: 45px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc4 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 156px;
+        bottom: 72px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc5 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 97px;
+        bottom: 165px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc6 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 210px;
+        bottom: 165px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc7 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 154px;
+        bottom: 200px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc8 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 236px;
+        bottom: 245px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc9 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 84px;
+        bottom: 245px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc10 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 90px;
+        bottom: 348px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc11 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 217px;
+        bottom: 348px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    img.banco_reserva {
+        width: 60px;
+        position: absolute;
+        left: 365px;
+        bottom: 233px;
+    }
+    img.logo_time {
+        width: 60px;
+        position: absolute;
+        left: 365px;
+        bottom: 360px;
+    }
+    h1.nome_time{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 350px;
+        bottom: 330px;
+        font-size: 8pt;
+        width: 70px;
+    }
+    .escr1 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 360px;
+        bottom: 196px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .escr2 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 360px;
+        bottom: 152px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .escr3 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 360px;
+        bottom: 108px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .escr4 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 360px;
+        bottom: 64px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .escr5 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 360px;
+        bottom: 20px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+
+
+/*Tamanho para smarthphones*/
+@media only screen and (max-width: 480px){
+    .campo_escalacao{
+        max-width: 350px;
+        position: relative;
+        left: 5px;
+        top: 0;
+        z-index: -1;
+    }
+    .escalacao_completa {
+        bottom: 80px;
+        position: relative;
+        left: -55px;
+    }
+    .img_banco {
+        position: relative;
+        bottom: 60px;
+        left: -80px;
+    }
+    select.jog1 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 181px;
+        bottom: -45px;
+    }
+    select.jog2 {
+        position: absolute;
+        width:  50px;
+        height: 25px;
+        left: 127px;
+        bottom: 3px;
+    }
+    select.jog3 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 238px;
+        bottom: 3px;
+    }
+    select.jog4 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 180px;
+        bottom: 35px;
+    }
+    select.jog5 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 102px;
+        bottom: 150px
+    }
+    select.jog6 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 180px;
+        bottom: 131px;
+    }
+    select.jog7 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 255px;
+        bottom: 150px
+    }
+    select.jog8 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 104px;
+        bottom: 216px;
+    }
+    select.jog9 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 248px;
+        bottom: 216px;
+    }
+    select.jog10 {
+        z-index: 1;
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 128px;
+        bottom: 298px;
+    }
+    select.jog11 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 232px;
+        bottom: 298px;
+    }
+    img.banco_reserva {
+        width: 60px;
+        position: absolute;
+        left: 365px;
+        bottom: 233px;
+    }
+    img.logo_time {
+        width: 60px;
+        position: absolute;
+        left: 365px;
+        bottom: 360px;
+    }
+    h1.nome_time {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 372px;
+        bottom: 292px;
+        text-align: center;      
+    }
+    h1.nome_tecnico {
+    color: orange;
+    position: absolute;
+    left: 320px;
+    bottom: 305px;
+    text-align: center;
+    font-size: 9pt;
+    width: 150px;
+    }
+    select.res1 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 360px;
+        bottom: 196px;
+    }
+    select.res2 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 360px;
+        bottom: 152px;
+    }
+    select.res3 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 360px;
+        bottom: 108px;
+    }
+    select.res4 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 360px;
+        bottom: 64px;
+    }
+    select.res5 {
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        left: 360px;
+        bottom: 20px;
+    }
+    input.btn-enviar {
+        position: absolute;
+        left: 360px;
+        bottom: -25px;
+        background-color: #099e6e;
+        width: 50px;
+        height: 28px;
+        color: white;
+    }
+    select.formacao {
+        position: relative;
+        bottom: 28px;
+        left: 20px;
+        text-align: center;
+        background-color: orange;
+        
+    }
+    /*Time escalado*/
+    .escalado_completo {
+        bottom: -545px;
+        position: relative;
+        left: -68px;
+    }
+    .esc1 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 161px;
+        bottom: 12px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+        }
+    .esc2 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 228px;
+        bottom: 45px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc3 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 96px;
+        bottom: 45px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc4 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 156px;
+        bottom: 72px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc5 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 97px;
+        bottom: 165px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc6 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 210px;
+        bottom: 165px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc7 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 154px;
+        bottom: 200px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc8 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 236px;
+        bottom: 245px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc9 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 84px;
+        bottom: 245px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc10 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 90px;
+        bottom: 348px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .esc11 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 217px;
+        bottom: 348px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    img.banco_reserva {
+        width: 60px;
+        position: absolute;
+        left: 365px;
+        bottom: 233px;
+    }
+    img.logo_time {
+        width: 60px;
+        position: absolute;
+        left: 365px;
+        bottom: 360px;
+    }
+    h1.nome_time{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 320px;
+        bottom: 330px;
+        font-size: 8pt;
+        width: 150px;
+    }
+    .escr1 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 360px;
+        bottom: 196px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .escr2 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 360px;
+        bottom: 152px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .escr3 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 360px;
+        bottom: 108px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .escr4 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 360px;
+        bottom: 64px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .escr5 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        left: 360px;
+        bottom: 20px;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: small;
+    }
+}
